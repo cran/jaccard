@@ -4,8 +4,7 @@
 \alias{jaccard.test}
 \title{Test for Jaccard/Tanimoto similarity coefficients}
 \usage{
-jaccard.test(x, y, method = "mca", px = NULL, py = NULL, verbose = TRUE,
-  ...)
+jaccard.test(x, y, method = "mca", px = NULL, py = NULL, verbose = TRUE, ...)
 }
 \arguments{
 \item{x}{a binary vector (e.g., fingerprint)}
@@ -33,12 +32,12 @@ Compute statistical significance of Jaccard/Tanimoto similarity coefficients bet
 }
 \details{
 There exist four methods to compute p-values of Jaccard/Tanimoto similarity coefficients:
-\code{mca}, \code{bootstrap}, \code{asymptotic}, and \code{exact}. This is simply a wrapper function for
+\code{mca}, \code{bootstrap}, \code{asymptotic}, and \code{exact}. This is simply a wrapper function for 
 corresponding four functions in this package: \link{jaccard.test.mca}, \link{jaccard.test.bootstrap},  \link{jaccard.test.asymptotic}, and \link{jaccard.test.exact}.
 
 We recommand using either \code{mca} or \code{bootstrap} methods,
 since the \code{exact} solution is slow for a moderately large vector and \code{asymptotic} approximation may be inaccurate depending on the input vector size.
-The {bootstrap} method uses resampling with replacement binary vectors to compute a p-value (see optional arguments).
+The \code{bootstrap} method uses resampling with replacement binary vectors to compute a p-value (see optional arguments).
 The \code{mca} method uses the measure concentration algorithm that estimates the multinomial distribution with a known error bound (specified by an optional argument \code{accuracy}).
 }
 \section{Optional arguments for \code{method="bootstrap"}}{

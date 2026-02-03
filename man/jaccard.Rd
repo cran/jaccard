@@ -18,7 +18,7 @@ jaccard(x, y, center = FALSE, px = NULL, py = NULL)
 \item{py}{probability of successes in \code{y} (optional)}
 }
 \value{
-\code{jaccard} returns a Jaccard/Tanimoto coefficient.
+\code{jaccard.test.bootstrap} returns an expected value.
 }
 \description{
 Compute a Jaccard/Tanimoto similarity coefficient

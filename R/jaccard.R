@@ -5,7 +5,7 @@
 #' @param px probability of successes in \code{x} (optional)
 #' @param py probability of successes in \code{y} (optional)
 #'
-#' @return \code{jaccard.ev} returns an expected value.
+#' @return \code{jaccard.test.bootstrap} returns an expected value.
 #'
 #' @export jaccard.ev
 #'
@@ -35,7 +35,7 @@ jaccard.ev <- function(x, y, px=NULL, py=NULL) {
 #' @param px probability of successes in \code{x} (optional)
 #' @param py probability of successes in \code{y} (optional)
 #'
-#' @return \code{jaccard} returns a Jaccard/Tanimoto coefficient.
+#' @return \code{jaccard.test.bootstrap} returns an expected value.
 #'
 #' @export jaccard
 #'
@@ -67,3 +67,7 @@ jaccard <- function(x, y, center=FALSE, px=NULL, py=NULL) {
     return(j - (px*py)/(px+py-px*py))
   }
 }
+
+#' @useDynLib jaccard, .registration = TRUE
+#' @import Rcpp
+NULL

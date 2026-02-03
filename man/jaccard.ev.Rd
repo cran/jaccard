@@ -16,7 +16,7 @@ jaccard.ev(x, y, px = NULL, py = NULL)
 \item{py}{probability of successes in \code{y} (optional)}
 }
 \value{
-\code{jaccard.ev} returns an expected value.
+\code{jaccard.test.bootstrap} returns an expected value.
 }
 \description{
 Compute an expected Jaccard/Tanimoto similarity coefficient under independence

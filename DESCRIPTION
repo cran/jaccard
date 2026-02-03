@@ -1,23 +1,38 @@
 Package: jaccard
 Type: Package
-Title: Test Similarity Between Binary Data using Jaccard/Tanimoto
-        Coefficients
-Version: 0.1.0
-Date: 2018-06-06
-Author: Neo Christopher Chung <nchchung@gmail.com>, Błażej Miasojedow
-    <bmiasojedow@gmail.com>, Michał Startek <M.Startek@mimuw.edu.pl>, Anna Gambin <aniag@mimuw.edu.pl>
+Title: Testing Similarity Between Binary Datasets using
+        Jaccard/Tanimoto Coefficients
+Version: 0.1.2
+Date: 2026-02-02
 Maintainer: Neo Christopher Chung <nchchung@gmail.com>
+Authors@R: c(person(given = c("Neo", "Christopher"),
+                        family = "Chung",
+                        role = c("aut", "cre"),
+                        email = "nchchung@gmail.com"),
+                 person(given = "Błażej",
+                        family = "Miasojedow",
+                        role = "aut",
+                        email = "bmiasojedow@gmail.com"),
+                 person(given = "Michał",
+                        family = "Startek",
+                        role = "aut",
+                        email = "M.Startek@mimuw.edu.pl"),
+                 person(given = "Anna",
+                        family = "Gambin",
+                        role = "aut",
+                        email = "a.gambin@uw.edu.pl"))
 Description: Calculate statistical significance of Jaccard/Tanimoto similarity
-    coefficients for binary data.
-biocViews:
+    coefficients.
 License: GPL-2
 Encoding: UTF-8
-LazyData: true
-Imports: Rcpp (>= 0.12.6), qvalue, dplyr, magrittr
+Imports: Rcpp (>= 0.12.6), qvalue, shiny
 LinkingTo: Rcpp
 NeedsCompilation: yes
-SystemRequirements: C++11
-RoxygenNote: 6.0.1
-Packaged: 2018-06-10 01:52:22 UTC; nc
+RoxygenNote: 7.3.3
+Packaged: 2026-02-03 09:37:51 UTC; ncc
+Author: Neo Christopher Chung [aut, cre],
+  Błażej Miasojedow [aut],
+  Michał Startek [aut],
+  Anna Gambin [aut]
 Repository: CRAN
-Date/Publication: 2018-06-14 17:53:00 UTC
+Date/Publication: 2026-02-03 10:00:11 UTC

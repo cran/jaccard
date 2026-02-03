@@ -4,8 +4,13 @@
 \alias{jaccard.test.pairwise}
 \title{Pair-wise tests for Jaccard/Tanimoto similarity coefficients}
 \usage{
-jaccard.test.pairwise(dat, method = "mca", verbose = TRUE,
-  compute.qvalue = TRUE, ...)
+jaccard.test.pairwise(
+  dat,
+  method = "mca",
+  verbose = TRUE,
+  compute.qvalue = TRUE,
+  ...
+)
 }
 \arguments{
 \item{dat}{a data matrix}
@@ -26,7 +31,7 @@ jaccard.test.pairwise(dat, method = "mca", verbose = TRUE,
 }
 \description{
 Given a data matrix, it computes pair-wise Jaccard/Tanimoto similarity coefficients
-and p-values among rows (variables). For fine controls, use \code{"jaccard.test"}.
+and p-values among rows (variables). Only for testing due to its use of a for-loop.
 }
 \seealso{
 \link{jaccard.test}
